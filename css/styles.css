@@ -1,0 +1,303 @@
+:root{
+	
+	--dprimary: #028376;
+	--dprimary2: #005950;
+	--dsecondary: #E4E4E4;
+	--dtercero: #F1F0F0; /* --menu bottom */
+	--dcuarto: #DADADA;
+	
+	--dboxprimary: #ffffff;
+	
+	--dbox1: #015E92;
+	--dbox1l: #89D5FF;
+	--dbox2: #026D54;
+	--dbox2l: #04EDB5;
+	--dbox3: #FF0000;
+	--dbox3l: #FFD3D3;
+	
+	--dtexto1: #000000;
+	--dtexto2: #292929;
+	
+	--dtextoc: #ffffff;
+}
+
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+
+.pady{
+	padding: 80px 0px 20px 0px;
+}
+
+
+nav{
+	background: var(--dprimary2);
+}
+nav .cont{
+	display: flex;
+	justify-content: space-between;
+	height: auto;
+	width: 100%;
+	padding: 20px 1%;
+}
+nav .cont a:link{
+	text-decoration: none;
+	color: var(--dtextoc);
+}
+nav .cont a:visited{
+	color: var(--dtextoc);
+}
+nav .cont ul{
+	list-style: none;
+	margin: 0px;
+}
+
+
+header{
+	background: var(--dprimary);
+	height: auto;
+	width: 100%;
+	padding: 80px 0px;
+}
+header .image{
+	background: var(--dtextoc);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: auto;
+	border-radius: 100px;
+	padding: 10%;
+}
+header .image img{
+	width: 100%;
+}
+header h1{
+	color: var(--dtextoc);
+	font-weight: 600;
+}
+header p{
+	color: var(--dtextoc);
+}
+
+
+/* ----estilos generales -----*/
+.info h2{
+	font-size: 32px;
+	font-weight: 600;
+	color: var(--dtexto1);
+	margin-bottom: 30px;
+	text-transform: capitalize;
+}
+
+
+
+
+.categorias a:link{
+	text-decoration: none;
+}
+.categorias .tarjet{
+	background: var(--dtercero);
+	width: 100%;
+	padding: 10px;
+	border-radius: 15px;
+	height: 100px;
+	display: flex;
+	text-decoration: none;
+	color: var(--dtexto1);
+	font-weight: 500;
+	justify-content: center;
+	align-items: center;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+}
+.categorias .tarjet img{
+	margin-right: 10px;
+}
+.categorias .tarjet span{
+	font-size: 16px;
+}
+.categorias a:hover .tarjet{
+	background: var(--dsecondary);
+}
+.tarjet span.s-m{
+	font-size: 14px;
+}
+
+
+
+.avisos ul{
+	list-style-image: url("../images/pin.svg");
+}
+.avisos ul li{
+	line-height: 30px;
+	font-size: 14px;
+	border-bottom: 1px solid var(--dcuarto);
+	margin-bottom: 30px;
+	padding-bottom: 5px;
+	color: var(--dtexto2);
+}
+
+.avisos ul li:last-child{
+	border-bottom: none;
+}
+
+
+
+footer{
+	width: 100%;
+	padding: 150px 0px 25px 0px;
+}
+footer .cont{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+footer .cont p{
+	font-size: 13px;
+}
+
+a:link.dyxer{
+	font-weight: 600;
+	text-decoration: none;
+	color: var(--dtexto1);
+}
+a:visited.dyxer{
+	color: var(--dtexto1);
+}
+a:hover.dyxer{
+	color: var(--dbox1);
+	border-bottom: 2px solid var(--dbox1);
+}
+
+
+.horario p{
+	color: var(--dtexto2);
+}
+.horario p span{
+	font-weight: 600;
+	color: var(--dtexto1);
+}
+.horario p span.person, .reunion span.day{
+	background: var(--dtercero);
+	padding: 5px 10px;
+}
+span.notice{
+	background: var(--dbox3l);
+	color: var(--dbox3);
+	display: inline-block;
+	width: auto;
+	padding: 15px 30px;
+	font-weight: 500;
+	line-height: 32px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+
+
+.reunion ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	color: var(--dtexto2);
+}
+.reunion ul li{
+	line-height: 35px;
+}
+.reunion ul li span{
+	color: var(--dtexto1);
+	font-weight: 600;
+}
+.reunion ul li ul li{
+	list-style: disc;
+	margin-left: 50px;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+
+
+.comite .tarjet{
+	display: flex;
+	padding: 10px;
+	margin-bottom: 20px;
+	align-items: center;
+	width: 300px;
+	border: 1px solid var(--dcuarto);
+	border-radius: 5px;
+}
+.comite .content{
+	margin-left: 15px;
+}
+.comite .tarjet .content h3{
+	font-size: 24px;
+	color: var(--dtexto1);
+	margin-bottom: 0px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.comite .tarjet .content p{
+	color: var(--dtexto2);
+	margin-bottom: 0px;
+	font-size: 16px;
+	text-transform: capitalize;
+}
+
+
+
+/* -------------------------------responsive-------------------------------*/
+
+@media screen and (max-width: 991px){
+	
+	.pady {
+		padding: 50px 0px 10px 0px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	
+	.pady {
+		padding: 40px 0px 00px 0px;
+	}
+	
+	header{
+		padding: 30px 0px;
+	}
+	header h1{
+		margin-top: 15px;
+	}
+	nav{
+		display: none;
+	}
+	
+}
+
+
+
+
+
+
+@media screen and (max-width: 575px){
+	header h1{
+		
+		font-size: 24px;
+	}
+	.info h2 {
+    	font-size: 24px;
+		margin-bottom: 20px;
+	}
+	
+	.categorias .tarjet{
+		flex-direction: column;
+		height: auto;
+	}
+	.categorias .tarjet img{
+		margin-right: 0px;
+		margin-bottom: 10px;
+	}
+	
+}
